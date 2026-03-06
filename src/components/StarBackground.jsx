@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+/*
+    import { useEffect, useState } from "react";
 
 // id,stars ,x,y , opacity ,animationDuration
 // id,stars ,x,y , delay ,animationDuration
@@ -93,3 +94,4 @@ export const StarBackground = () => {
         </div>
     );
 };
+*/
