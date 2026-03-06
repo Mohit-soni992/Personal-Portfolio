@@ -1,3 +1,4 @@
+/*
 import { useEffect, useState } from "react";
 
 // id,stars ,x,y , opacity ,animationDuration
@@ -92,4 +93,4 @@ export const StarBackground = () => {
             ))}
         </div>
     );
-};
+};*/
