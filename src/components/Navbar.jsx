@@ -23,6 +23,22 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+useEffect(() => {
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  }
+  // Cleanup jab component unmount ho
+  return () => {
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  };
+}, [isMenuOpen]);
+
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
@@ -62,7 +78,7 @@ export const Navbar = () => {
         </div>
 
         {/* --- MOBILE CONTROLS (Only visible on Mobile) --- */}
-        <div className="flex items-center md:hidden gap-2 z-50">
+        <div className="flex items-center md:hidden gap-2 z-60">
           {/* Theme Toggle Button - Only shows on Mobile */}
           <button
             onClick={toggleTheme}
@@ -85,11 +101,11 @@ export const Navbar = () => {
         {/* Mobile Nav Overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/60 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
-            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+           "fixed top-0 left-0 w-full h-screen bg-background z-50 flex flex-col items-center justify-center gap-8 text-xl md:hidden transition-all duration-300",
+           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl items-center">
+          <div className="flex flex-col space-y-8 text-xl items-center mt-16">
             {navItems.map((item, key) => (
               <a
                 key={key}
