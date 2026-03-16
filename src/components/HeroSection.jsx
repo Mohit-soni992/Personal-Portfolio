@@ -52,7 +52,7 @@ export const HeroSection = () => {
                                 background: "linear-gradient(135deg, hsl(var(--primary)), #06b6d4, hsl(var(--primary)))"
                             }}
                         >
-                            <div className="relative w-100 h-96 rounded-[18px] overflow-hidden bg-card/80 backdrop-blur-xl">
+                            <div className="relative w-80 h-96 rounded-[18px] overflow-hidden bg-card/80 backdrop-blur-xl">
                                 <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
                                 <div className="absolute -bottom-6 -right-6 w-28 h-28 bg-cyan-500/15 rounded-full blur-2xl" />
                                 <img
