@@ -11,6 +11,15 @@ const projects = [
         githubUrl:"https://github.com/Mohit-soni992/cityhosteljodhpur",
 
     },
+    {
+        id:2,
+        title:"Portfolio Website",
+        description:"A portfolio website to showcase my projects and skills",
+        image:"/Projects/project1.png",
+        tags:["Html"," Css"," Js"," React"],
+        githubUrl:"https://github.com/Mohit-soni992/Personal-Portfolio",
+
+    },
     // for more project you can add here 
 ]
 
@@ -59,6 +68,7 @@ export const ProjectSection = () => {
                     </div>
                 ))}
             </div>
+            
             <div className="text-center mt-12">
                 <a 
                     className="cosmic-button w-fit flex items-center mx-auto gap-2"
