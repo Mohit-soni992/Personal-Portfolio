@@ -13,11 +13,20 @@ const projects = [
     },
     {
         id:2,
-        title:"Portfolio Website",
+        title:"Portfolio",
         description:"A portfolio website to showcase my projects and skills",
         image:"/Projects/project1.png",
         tags:["Html"," Css"," Js"," React"],
         githubUrl:"https://github.com/Mohit-soni992/Personal-Portfolio",
+
+    },
+    {
+        id:3,
+        title:"Mistri ji",
+        description:"A website for a local business to showcase their services and products",
+        image:"/Projects/project2.png",
+        tags:["Html"," Css"," Js"," React"],
+        githubUrl:"https://github.com/Mohit-soni992/Mistri-ji",
 
     },
     // for more project you can add here 
