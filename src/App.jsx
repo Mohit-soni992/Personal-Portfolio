@@ -1,9 +1,10 @@
 import { Home } from "./pages/Home"
 import { NotFound } from "./pages/NotFound"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import useLenis from "./lib/useLenis";
 
-function App() {
-  
+export default function App() {
+  useLenis();
 
   return (
     <>
@@ -16,5 +17,3 @@ function App() {
     </>
   )
 }
-
-export default App
